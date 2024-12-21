@@ -1,35 +1,129 @@
+
 body {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     margin: 0;
     height: 100vh;
-  }
-  
-  header, footer {
-    background-color: #444;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: #f4f4f9; 
+    color: #333; 
+}
+
+header, footer {
+    background: linear-gradient(45deg, #6a11cb, #2575fc); 
     color: white;
     text-align: center;
-    padding: 1em;
+    padding: 1.5em;
     flex: 0 0 auto;
-  }
-  
-  main {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+header .logo {
+    font-size: 2.5em;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+nav ul {
     display: flex;
-    flex-direction: row; 
-    flex: auto; 
-  }
-  
-  article {
-    flex: 2; 
-    background-color: #f4f4f4;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #333; 
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: #ff6f61;
+    color: #fff;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+    gap: 20px;
     padding: 1em;
+}
+
+article {
+    flex: 2;
+    background-color: #fff;
+    padding: 1.5em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+article:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+article h3 {
+    color: #2575fc; 
+    margin-bottom: 0.5em;
+}
+
+article p {
+    margin-bottom: 1em;
+}
+
+article a {
+    color: #6a11cb; 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+
+aside {
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow-y: auto;
-  }
-  
-  aside {
-    flex: 1; 
-    background-color: #ddd;
-    padding: 1em;
-    overflow-y: auto;
-  }
-  
+}
+
+footer {
+    padding: 1.5em;
+    font-size: 0.9em;
+    background: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    article, aside {
+        flex: auto;
+    }
+}
