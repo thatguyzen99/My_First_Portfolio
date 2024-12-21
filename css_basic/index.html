@@ -1,33 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexbox Layout</title>
+    <meta name="description" content="John Doe's personal portfolio showcasing creative web development projects and skills.">
     <title>John Doe - Personal Portfolio</title>
-
     <link href="base.css" rel="stylesheet">     
     <link href="styles.css" rel="stylesheet">
-
 </head>
-<body>
-    
+<body class="works_on_smartphone">
     <header>
         <h1>John Doe</h1>
         <p>Creative Developer | Passionate about building beautiful and functional web experiences</p>
+        <nav>
+            <ul>
+                <li><a href="#introduction" aria-label="Go to Introduction section">Introduction</a></li>
+                <li><a href="#projects" aria-label="Go to Projects section">Projects</a></li>
+                <li><a href="#about" aria-label="Go to About Me section">About Me</a></li>
+                <li><a href="#contact" aria-label="Go to Contact section">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#introduction">Introduction</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    
     <main>
         <section id="introduction">
             <h2>Introduction</h2>
@@ -39,27 +33,25 @@
 
         <section id="projects">
             <h2>Projects</h2>
-
             <article class="project">
                 <h3>Project 1: Portfolio Website</h3>
                 <p>This is a personal portfolio website showcasing my skills and projects.</p>
-                <a href="https://github.com/yourusername/portfolio" target="_blank">View on GitHub</a>
+                <a href="https://github.com/yourusername/portfolio" target="_blank" aria-label="View portfolio project on GitHub">View on GitHub</a>
             </article>
 
             <article class="project">
                 <h3>Project 2: To-Do List App</h3>
                 <p>A simple web-based to-do list app to help manage daily tasks.</p>
-                <a href="https://github.com/yourusername/todolist" target="_blank">View on GitHub</a>
+                <a href="https://github.com/yourusername/todolist" target="_blank" aria-label="View to-do list project on GitHub">View on GitHub</a>
             </article>
 
             <article class="project">
                 <h3>Project 3: Responsive Blog Page</h3>
                 <p>A fully responsive blog page designed for both desktop and mobile devices.</p>
-                <a href="https://github.com/yourusername/blogpage" target="_blank">View on GitHub</a>
+                <a href="https://github.com/yourusername/blogpage" target="_blank" aria-label="View responsive blog project on GitHub">View on GitHub</a>
             </article>
         </section>
 
-       
         <section id="about">
             <h2>About Me</h2>
             <p>
@@ -76,21 +68,19 @@
             </p>
         </section>
 
-       
         <section id="contact">
             <h2>Contact</h2>
             <p>
                 Feel free to reach out to me via email or connect with me on LinkedIn and GitHub:
             </p>
             <ul>
-                <li>Email: <a href="mailto:johndoe@example.com">johndoe@example.com</a></li>
-                <li>LinkedIn: <a href="https://www.linkedin.com/in/johndoe" target="_blank">linkedin.com/in/johndoe</a></li>
-                <li>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></li>
+                <li>Email: <a href="mailto:johndoe@example.com" aria-label="Email John Doe">johndoe@example.com</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/johndoe" target="_blank" aria-label="Visit John Doe's LinkedIn profile">linkedin.com/in/johndoe</a></li>
+                <li>GitHub: <a href="https://github.com/yourusername" target="_blank" aria-label="Visit John Doe's GitHub profile">github.com/yourusername</a></li>
             </ul>
         </section>
     </main>
 
-   
     <footer>
         <p>&copy; 2024 John Doe</p>
     </footer>
